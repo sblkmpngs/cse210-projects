@@ -61,7 +61,7 @@ class Program
             {
                 Console.Write("Input File Name: ");
                 Console.ReadLine();
-                Console.WriteLine("Saving File...");
+                Console.WriteLine("Saving  File...");
                 string filename = Console.ReadLine();
                 myJournal.SaveToFile(filename);
             }
