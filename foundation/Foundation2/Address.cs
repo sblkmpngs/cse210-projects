@@ -24,14 +24,25 @@ public class Address
 
     public bool Location()
     {
-        //- method returning whether it is in the US or not. 
-        return true;
+        if (_country == "South Africa")
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+
 
     }
 
-    public void DisplayAll()
+    public string DisplayAll()
     {
-        //- method returning a string = all fields together in one string(with newline characters where appropriate). 
+
+        string address = $"{_streetAddress}, {_city}, {_stateProvince}, {_country}";
+
+        return address;
+
     }
 
 
